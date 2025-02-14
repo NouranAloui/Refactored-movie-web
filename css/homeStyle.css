@@ -1,0 +1,94 @@
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* custom scroll bar */
+  html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color:black;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color:#ff2c1f;
+    border-radius: 5rem;
+  }
+/* custom scroll bar */
+  
+/* Navbar */
+ .navbar {
+    transition:  rgba(0, 0, 0, 0) 0.3s ease-in-out;
+  }
+
+  .navbar.scrolled{
+    background-color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navbar-brand
+  {
+    color: white !important;
+  }
+  .navbar.scrolled .navbar-brand{
+    color: black !important;
+  }
+  .navbar.top .nav-link
+  {
+    color: rgb(224, 2, 2);
+  }
+  /* Underline in hover over menue items */
+  .border-bottom-hover {
+    position: relative;
+    padding-bottom: 5px;   
+  }
+  .border-bottom-hover::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff2c1f;
+    transition: width 0.3s ease;  
+  }
+  .border-bottom-hover:hover::after {
+    width: 100%;   
+  }
+  .menu-icon.active 
+  {
+    border-bottom: 3px solid #ff2c1f;
+    color: #ff2c1f;
+  }
+/* end navbar style */
+
+  .home {
+    width: 101%;
+    min-height: 100vh;
+    background-image: url(../img/home3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card .card-img-top {
+    cursor: pointer;
+    transition: 0.2s all linear;
+  }
+  .card .card-img-top:hover {
+    transform:translateY(-10px);
+  }
+  .social-icons 
+  {
+    transition: background-color 0.5s ease-in; 
+    border-radius: 10px;
+  }
+  .social-icons i{
+    color: #ff2c1f !important;
+  }
+  .social-icons:hover{
+    background-color: #ff2c1f !important;
+   
+  }
+  .social-icons i:hover
+  {
+    color:white !important;
+  }
+ 
+  
